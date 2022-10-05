@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saklar lampu</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+</head>
+
+<body style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2Fe6%2F35%2Fb5e635963b3f44bde643bfd0727a3d80.jpg&f=1&nofb=1);
+            background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Rumah</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ruangkeluarga.html">Ruang keluarga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ruangtamu.html">Ruang tamu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ruangmakan.html">Ruang makan</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Tugas CuyUniverse
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div
+        style="position: relative; top: 30%; display: flex; justify-content: center; align-items: center; column-gap: 40px;">
+        <label for="default-toggle22" class="inline-flex relative items-center cursor-pointer">
+            <input type="checkbox" value="" id="default-toggle22" class="sr-only peer" onchange="saklar22()">
+            <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+        </label>
+        <!-- lampu 4 -->
+        <div>
+            <img src="assets/images/off.gif" alt="" id="lampu4">
+            <label for="default-toggle4" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle4" class="sr-only peer" onchange="saklar2()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+        <!-- Lampu 5 -->
+        <div>
+            <img src="assets/images/off.gif" alt="" id="lampu5">
+            <label for="default-toggle5" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle5" class="sr-only peer" onchange="saklar2()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+        <!-- Lampu 6 -->
+        <div>
+            <img src="assets/images/off.gif" alt="" id="lampu6">
+            <label for="default-toggle6" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle6" class="sr-only peer" onchange="saklar2()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
